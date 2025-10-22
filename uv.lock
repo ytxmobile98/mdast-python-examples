@@ -1,0 +1,24 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "mdast"
+version = "0.2.1"
+source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/e0/96/b7d0a3dfecc72cc3d28477bf3080b46f86a3000219abd0cc4785e727e903/mdast-0.2.1.tar.gz", hash = "sha256:6fad71cc7241b2728982f729d7fb72ad03c2394129c21c902af3ca82f0a33ecd" }
+wheels = [
+    { url = "https://mirrors.aliyun.com/pypi/packages/b1/7d/f8ef5ac1a1102814d853db362c71b679cb4f4b04926359f76db2bc4926d6/mdast-0.2.1-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c67c2820a6c2ecc3763b0df016052bc2623be27cf9f4e4929f2495380ccf6fe4" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/50/00/ea8496c6c872c78b8d15eca9dbf30f34fa2ea661fc4a621ca8c91dd861cd/mdast-0.2.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7c5043d4a0d17c8ed5d59a9bf532ee3d8917cda4952bb66aa92a27d58a727ee0" },
+]
+
+[[package]]
+name = "mdast-python-examples"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "mdast" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "mdast", specifier = ">=0.2.1" }]
