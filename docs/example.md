@@ -61,6 +61,10 @@ aaa
 
 bbb
 
+This is a piece of `inline code` within a paragraph.
+
+This is **bold text** and this is _italic text_.
+
 ### Table
 
 | foo | bar |
